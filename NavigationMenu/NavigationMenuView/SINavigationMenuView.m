@@ -76,7 +76,12 @@
         self.menuButton.arrow.layer.transform = CATransform3DMakeRotation(degrees, 0, 0, 1);
     } completion:NULL];
 }
-
+- (void)setTitle:(NSString *)title{
+    self.menuButton.title.text = title;
+}
+- (NSString *)title{
+    return self.menuButton.title.text;
+}
 #pragma mark -
 #pragma mark Delegate methods
 - (void)didSelectItemAtIndex:(NSUInteger)index
