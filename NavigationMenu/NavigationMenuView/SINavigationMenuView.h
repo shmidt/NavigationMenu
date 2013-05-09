@@ -22,5 +22,5 @@
 
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title;
 - (void)displayMenuInView:(UIView *)view;
-
+@property (nonatomic, strong) NSString *title;
 @end
